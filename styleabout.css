@@ -14,10 +14,13 @@
     padding: 5px;
     background-color: rgb(4, 8, 51);
     display:flex;
+    Font-Family: 'Roboto Condensed', Sans-Serif;
 }
+
 body{
-    background-color: rgb(4, 8, 51);
+    background-color: rgb(4, 8, 51);   
 }
+
 
 #aboutimages{
     width: 30%;
@@ -32,13 +35,15 @@ body{
 h1{
     color: white;
     text-align: center;
-    font-family: sans-serif;
-    
+    Font-Family: 'Roboto Condensed', Sans-Serif;
+    Font-Size: 35px;
 }
+
 h2{
     color: white;
     text-align:left;
-    font-family: sans-serif;
+    Font-Family: 'Roboto Condensed', Sans-Serif;
+    Font-Size: 35px;
     text-decoration: underline;
     text-align: center;
 }
@@ -73,6 +78,12 @@ nav ul li{
     margin-right: 95px;
 }
 
+#Geolist{
+    color: white;
+    text-align: left;
+    Font-Family: 'Cabin', Sans-Serif;
+    Font-Size: 23px;
+}
 
 a:visited{
     text-decoration: none;
@@ -92,11 +103,13 @@ aside{
     align-content: space-between;
     gap: 2rem;
     width: 98%;
-    padding: 20px;
+    padding: 10px;
 }
 aside p{
-    color: rgb(255, 255, 255);
-    font-size: 20px;
+    color: rgb(233, 229, 229);
+    font-size: 24px;
+    Font-Family: 'Cabin', Sans-Serif;
+    line-height: 36px;
 
 }
 footer{
