@@ -23,8 +23,7 @@ body{
 
 
 #aboutimages{
-    width: 30%;
-    flex: right   
+    width: 30%;  
 }
 
 #tedlasso{
@@ -87,7 +86,7 @@ nav ul li{
 
 a:visited{
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: #fed600;
 }
 
 a:link{
@@ -112,6 +111,37 @@ aside p{
     line-height: 36px;
 
 }
+
+.box {
+
+    background-color:azure;
+
+    width: 20rem;
+    height: 20rem;
+
+    border-color: black;
+    border-width: 1rem;
+    display:inline-block;
+    justify-content: center;
+    align-items:center;
+    margin:1rem;
+}
+
+main{
+    background-color: beige;
+    padding: 5rem;
+    flex-grow: 1;
+    height: fit-content;
+    display:inline-block;
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-rows:repeat(2, 1fr);
+    column-gap: 5rem;
+    row-gap:5rem;
+    width:100%;
+
+
+}
+
 footer{
     clear: both;
     height: 70px;
