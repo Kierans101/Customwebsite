@@ -133,8 +133,8 @@ main {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 5rem;
     row-gap: 5rem;
-    width: 97%;
-    padding-left: 25px;
+    width: 100%;
+    padding-left: 89px;
 }
 
 footer{
