@@ -112,6 +112,10 @@ aside p{
 
 }
 
+#trailers {
+    width: 29%;
+}
+
 .box {
     background-color: rgb(121, 9, 9);
     width: 396px;
