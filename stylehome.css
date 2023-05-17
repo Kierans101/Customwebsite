@@ -95,13 +95,35 @@ nav ul li{
     position:relative;
     margin-right: 95px;
 }
+.slider{
+    width: 720px;
+    height: 376px;
+    background: url(images/trailer1.webp);
+    margin-left: 364px;
+    animation: slide 20s infinite;
+}
 
+@keyframes slide{
+25%{
+    background:url(images/trailer1.webp)
+}
+50%{
+    background:url(images/trailer2.webp)
+}
+75%{
+    background:url(images/trailer3.webp)
+}
+100%{
+    background:url(images/trailer4.webp)
+}
+}
 
 article{
-    width: 59%;
+    width: 60%;
     height: 546px;
     padding: 5px;
     border: 2px solid gold;
+    border-radius:10px;
     margin-bottom: 10px;
     background-color: rgb(121, 9, 9);
     margin-left: 18%;
