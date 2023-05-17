@@ -96,6 +96,7 @@ nav ul li{
     margin-right: 95px;
 }
 
+
 article{
     width: 59%;
     height: 546px;
@@ -122,16 +123,6 @@ article img{
     
 }
 
-aside{
-    background-color: rgb(121, 9, 9);
-    padding: 2rem;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: space-between;
-    gap: 2rem;
-    width: 100rem;
-}
 
 footer{
     clear: both;
