@@ -31,6 +31,7 @@ button {
     background-color: rgb(4, 8, 51);
     color: gold;
     width: 300px;
+    font-family: 'Roboto Condensed';
 }
 
 #tedlasso{
@@ -74,8 +75,10 @@ h2{
 #logo {
     text-align: left;
     color: white;
-    margin-left: 6.4%;
+    margin-left: 140px;
 }
+
+
 #banner{
     display: block;
     margin-right: auto;
@@ -95,16 +98,16 @@ nav ul li {
     border: 2px solid rgb(4, 8, 51);
     color: gold;
     font-size: 25px;
+    border-radius: 10px;
     position: relative;
     margin-right: 60px;
-    border-radius: 20px;
 }
 
 .slider {
     width: 720px;
     height: 376px;
     background: url(images/trailer1.webp);
-    margin-left: 215px;
+    margin-left: 210px;
     animation: slide 20s infinite;
     border-radius: 20px;
 }
@@ -131,14 +134,14 @@ nav ul li {
 }
 
 article {
-    width: 63%;
+    width: 66%;
     height: 546px;
     padding: 5px;
     border: 2px solid gold;
     border-radius: 10px;
     margin-bottom: 10px;
     background-color: rgb(121, 9, 9);
-    margin-left: 19%;
+    margin-left: 190px;
 }
 
 article p {
