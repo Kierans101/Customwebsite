@@ -8,15 +8,14 @@
 }
 
 
-#top{
+#top {
     width: 100%;
     height: 75px;
     padding: 5px;
-    background-color: rgb(4, 8, 51);
-    display:flex;
+    background-color: rgb(112, 16, 16);
+    display: flex;
     Font-Family: 'Roboto Condensed', Sans-Serif;
 }
-
 body{
     background-color: rgb(4, 8, 51);   
 }
@@ -66,11 +65,11 @@ nav{
     flex-grow: 1;
 }
 
-nav ul li{
+nav ul li {
     list-style-type: none;
     display: inline-block;
     padding: 5px 10px;
-    border: 2px solid rgb(112, 16, 16);
+    border: 2px solid rgb(4, 8, 51);
     color: gold;
     font-size: 25px;
     border-radius: 10px;
