@@ -1,0 +1,97 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    background:  rgb(4, 8, 51);
+}
+
+#top {
+    width: 100%;
+    height: 75px;
+    padding: 5px;
+    background-color: rgb(112, 16, 16);
+    display: flex;
+    Font-Family: 'Roboto Condensed', Sans-Serif;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    Font-Family: 'Roboto Condensed', Sans-Serif;
+    Font-Size: 35px;
+}
+
+nav{
+    text-align: center;
+    flex-grow: 1;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid rgb(4, 8, 51);
+    color: gold;
+    font-size: 25px;
+    border-radius: 10px;
+    position: relative;
+    margin-right: 60px;
+}
+
+#richmondbadge {
+    width: 101px;
+    padding-right: 10px;
+    padding-top: 6px;
+    margin-right: 7%;
+}
+
+#mainFlex{
+    display: flex;
+}
+
+.dropdown
+{
+max-width: 800px;
+}
+.dropdown .contentbox
+{
+ position:relative;
+ margin: 10px 20px;
+}
+.dropdown .contentbox .label
+{
+    position:relative;
+    padding: 10px;
+    background:#2694af;
+    color: white;
+    cursor:pointer;    
+}
+.dropdown .contentbox .label::before
+{
+ content: '+';
+ position:absolute;
+ top:50%;
+ right:20px;
+ transform: translateY(-50%);
+ font-size:1.5em;
+}
+.dropdown .contentbox.active .label::before{
+    content:'-';
+}
+
+
+.dropdown .contentbox .content
+{
+position:relative;
+background: white;
+height:0;
+overflow:hidden;
+transition:0.5s;
+overflow-y:auto;
+}
+
+.dropdown .contentbox.active  .content{
+height:150px;
+padding:10px;
+}
