@@ -70,6 +70,7 @@ body{
 
 #mainFlex{
     display: flex;
+    flex-wrap:wrap;
 }
 
 
@@ -180,6 +181,7 @@ footer {
     background-color: rgb(112, 16, 16);
     text-align: center;
     margin-top: auto;
+    width:100%;
 }
 
 footer img{

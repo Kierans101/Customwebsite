@@ -107,6 +107,19 @@ aside{
     width: 98%;
     padding: 10px;
 }
+
+#trailersleft{
+    background-color: rgb(121, 9, 9);
+    border: 2px solid gold;
+    border-radius:10px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-between;
+    gap: 2rem;
+    width: 98%;
+    padding: 10px;
+}
 aside p{
     color: rgb(233, 229, 229);
     font-size: 24px;
@@ -137,7 +150,7 @@ footer{
     clear: both;
     height: 70px;
     padding: 5px;
-    background-color: rgb(4, 8, 51);
+    background-color: rgb(121, 9, 9);
     text-align: center;
 }
 

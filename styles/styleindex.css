@@ -70,6 +70,8 @@ h2{
     padding-right: 10px;
     padding-top: 6px;
     margin-right: 7%;
+    mix-blend-mode: multiply;
+    filter: contrast(1);
 }
 
 #logo {
@@ -106,7 +108,7 @@ nav ul li {
 .slider {
     width: 720px;
     height: 376px;
-    background: url(images/trailer1.webp);
+    background: url(../images/trailer1.webp);
     margin-left: 210px;
     animation: slide 20s infinite;
     border-radius: 20px;
@@ -114,16 +116,16 @@ nav ul li {
 
 @keyframes slide{
 25%{
-    background:url(images/trailer1.webp)
+    background:url(../images/trailer1.webp)
 }
 50%{
-    background:url(images/trailer2.webp)
+    background:url(../images/trailer2.webp)
 }
 75%{
-    background:url(images/trailer3.webp)
+    background:url(../images/trailer3.webp)
 }
 100%{
-    background:url(images/trailer4.webp)
+    background:url(../images/trailer4.webp)
 }
 }
 
