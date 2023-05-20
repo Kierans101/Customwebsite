@@ -133,7 +133,7 @@ max-width: 700px;
     background: rgb(4, 8, 51);
     color: white;
     cursor: pointer;
-    height: 26px;
+    height: 31px;
     font-family: 'Roboto Condensed';
 }
 .dropdown .contentbox .label::before
@@ -173,6 +173,25 @@ font-family: 'Roboto Condensed';
     position: static;
     overflow: hidden;
 }
+
+.thumbnails2 {
+    width: 92%;
+    padding: 6px;
+    margin-left: 14px;
+    position: static;
+    overflow: hidden;
+    height:322px;
+}
+
+.thumbnails3 {
+    width: 92%;
+    padding: 6px;
+    margin-left: 14px;
+    position: static;
+    overflow: hidden;
+    height:322px;
+}
+
 
 footer {
     clear: both;
