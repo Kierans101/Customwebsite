@@ -37,6 +37,7 @@ button {
 #tedlasso{
     width: 97%;
     height: 76%;
+    border-radius: 80px;
 }
 
 h1{
@@ -70,14 +71,15 @@ h2{
     padding-right: 10px;
     padding-top: 6px;
     margin-right: 7%;
-    mix-blend-mode: multiply;
-    filter: contrast(1);
 }
 
 #logo {
     text-align: left;
     color: white;
     margin-left: 140px;
+    flex-direction: column-reverse;
+    display: flex;
+    padding-top: 32px;
 }
 
 
@@ -103,6 +105,10 @@ nav ul li {
     border-radius: 10px;
     position: relative;
     margin-right: 60px;
+}
+
+nav ul li:hover{
+    background-color: rgb(4, 8, 51);
 }
 
 .slider {

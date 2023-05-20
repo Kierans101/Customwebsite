@@ -35,6 +35,9 @@ h2{
     text-align: left;
     color: white;
     margin-left: 140px;
+    flex-direction: column-reverse;
+    display: flex;
+    padding-top: 32px;
 }
 
 nav{
@@ -52,6 +55,11 @@ nav ul li {
     border-radius: 10px;
     position: relative;
     margin-right: 60px;
+}
+
+nav ul li:hover{
+    background-color: rgb(4, 8, 51);
+
 }
 
 #top {
@@ -84,6 +92,10 @@ body{
     margin-left: 24px;
 }
 
+.leftarticle:hover{
+    border-color: white;
+}
+
 .middlearticle {
     width: 500px;
     padding: 5px;
@@ -94,6 +106,10 @@ body{
     margin-left: 160px;
 }
 
+.middlearticle:hover {
+    border-color: white;
+}
+
 .rightarticle {
     width: 500px;
     padding: 5px;
@@ -102,6 +118,10 @@ body{
     margin-bottom: 10px;
     background-color: rgb(121, 9, 9);
     margin-left: 160px;
+}
+
+.rightarticle:hover{
+    border-color:white;
 }
 
 
