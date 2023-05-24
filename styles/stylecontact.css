@@ -1,0 +1,259 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#top {
+    width: 100%;
+    height: 75px;
+    padding: 5px;
+    background-color: rgb(112, 16, 16);
+    display: flex;
+    Font-Family: 'Roboto Condensed', Sans-Serif;
+}
+
+a:link {
+    text-decoration: none;
+    color: #fed600;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #fed600;
+}
+
+body {
+    background-color: rgb(4, 8, 51);
+    width: 100%;
+    height: 100vh;
+}
+
+#richmondbadge {
+    width: 146px;
+    height: 149%;
+    padding-right: 10px;
+    padding-top: 0px;
+    margin-right: 5%;
+    padding-bottom: 16px;
+}
+
+#logo {
+    text-align: left;
+    color: white;
+    margin-left: 118px;
+    flex-direction: column-reverse;
+    padding-top: 3px;
+    font-size: 3em;
+}
+
+nav {
+    text-align: center;
+    flex-grow: 1;
+    padding: 11px;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid rgb(4, 8, 51);
+    color: gold;
+    font-size: 25px;
+    border-radius: 10px;
+    position: relative;
+    margin-right: 60px;
+    padding-top: 0px;
+}
+
+nav ul li:hover {
+    background-color: rgb(4, 8, 51);
+}
+
+aside {
+    background-color: rgb(4, 8, 51);
+    border: 2px solid gold;
+    border-radius: 10px;
+    justify-content: center;
+    align-content: space-between;
+    gap: 2rem;
+    width: 100%;
+    padding: 32px;
+    margin-right: 130px;
+}
+
+#contactlist {
+    color: white;
+    text-align: left;
+    Font-Family: 'Cabin', Sans-Serif;
+    Font-Size: 18px;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 89%;
+    padding: 20px 100px;
+}
+
+.container:after {
+    content: '';
+    position: absolute;
+    Left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/backdrop.jpg) no-repeat center;
+    background-size: cover;
+    z-index: -1;
+    filter: blur(10px);
+}
+
+.contact-box {
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(4, 8, 51);
+    box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0).19;
+    border-radius: 10px;
+}
+
+.left {
+    height: 100%;
+    background: url(../images/contactcover.jpg) no-repeat center;
+    background-size: cover;
+
+}
+
+.right {
+    padding: 80px 40px;
+}
+
+h1 {
+    color: #fed600;
+    Font-Family: 'Roboto Condensed', Sans-Serif;
+    text-align: center;
+}
+
+h2 {
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    color: #fed600;
+    Font-Family: 'Roboto Condensed', Sans-Serif;
+    text-align: center;
+}
+
+h2:after {
+    content: '';
+    position: absolute;
+    Left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 100px;
+    border-radius: 2px;
+    background-color: rgb(112, 16, 16);
+
+}
+
+.asidep {
+    color: white;
+    text-align: left;
+    Font-Family: 'Cabin', Sans-Serif;
+    Font-Size: 18px;
+}
+
+.pnotreal {
+    color: white;
+    text-align: left;
+    Font-Family: 'Cabin', Sans-Serif;
+    Font-Size: 18px;
+    font-style: italic;
+}
+
+::placeholder {
+    color: #fed600;
+}
+
+.field {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0);
+    background-color: rgb(112, 16, 16);
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: .3s;
+}
+
+.field:hover {
+    background-color: #fff;
+}
+
+.field:focus {
+    background-color: #fff;
+    border: 2px solid #fed600;
+    ;
+}
+
+textarea {
+    height: 150px;
+}
+
+.area {
+    min-height: 150px;
+}
+
+.send {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    background-color: rgb(112, 16, 16);
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: #fed600;
+    transition: .3s;
+}
+
+.send:hover {
+    background-color: rgb(112, 16, 16);
+}
+
+footer {
+    clear: both;
+    height: 70px;
+    padding: 5px;
+    background-color: rgb(112, 16, 16);
+    text-align: center;
+}
+
+footer img {
+    width: 50px;
+}
+
+footer ul {
+    padding-left: 0px;
+}
+
+footer ul li {
+    display: inline-block;
+    padding: 0px 5px;
+}
+
+@media screen and (max-width: 880px) {
+    .contact-box {
+        grid-template-columns: 1fr;
+    }
+
+    .left {
+        height: 200px;
+    }
+}
