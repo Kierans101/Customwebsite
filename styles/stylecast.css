@@ -1,19 +1,23 @@
 * {
+    /* Using a universal selector to add more strucutre to my homepage.*/
     padding: 0;
     margin: 0;
 }
 
 a:link {
+    /*Giving no text decoration and colour of yellow to my links*/
     text-decoration: none;
     color: #fed600;
 }
 
 a:visited {
+    /*Giving no text decoration and colour of yellow to visited links*/
     text-decoration: none;
     color: #fed600;
 }
 
 h1 {
+    /*Using a generic h1 style element to style my h1 tag*/
     color: white;
     text-align: center;
     Font-Family: 'Roboto Condensed', Sans-Serif;
@@ -21,6 +25,7 @@ h1 {
 }
 
 h2 {
+    /*Using a generic h2 style element to style my h2 tags in general*/
     color: white;
     text-align: left;
     Font-Family: 'Roboto Condensed', Sans-Serif;
@@ -30,6 +35,7 @@ h2 {
 }
 
 #richmondbadge {
+    /*Giving my badge in my navigation bar an id, with style elements to suit it to the theme of my website*/
     width: 133px;
     height: 116%;
     padding-right: 30px;
@@ -39,6 +45,7 @@ h2 {
 }
 
 #logo {
+    /*Giving my logo in my navigation bar an id, with style elements to suit it to the theme of my website*/
     text-align: left;
     color: white;
     margin-left: 123px;
@@ -49,12 +56,14 @@ h2 {
 
 
 nav {
+    /*Giving my nav bar style elements to make my navigation bar sit at the top of the screen accordingly*/
     text-align: center;
     flex-grow: 1;
     padding: 17px;
 }
 
 nav ul li {
+    /*Giving my nav bar an unordered list style elements, this aided in my navigation headers, using structure and colour to suit the theme of my website*/
     list-style-type: none;
     display: inline-block;
     padding: 5px 10px;
@@ -68,11 +77,14 @@ nav ul li {
 }
 
 nav ul li:hover {
+    /*Giving my nav unordered list a hover effect, so whenever the user hovers over a header, it will turn dark blue*/
     background-color: rgb(4, 8, 51);
 
 }
 
 #top {
+    /*Using an ID here to style the top of my homepage, using structure style elements to aid the navigation bar, header and logo. Primarly adding a flex to my homepage aided in my layout overall. */
+
     width: 100%;
     height: 75px;
     background-color: rgb(112, 16, 16);
@@ -81,6 +93,7 @@ nav ul li:hover {
 }
 
 body {
+    /*Using a body style tag here, this enabled me to add colour to my background, and set the width and height to an appropriate scale*/
     background-color: rgb(4, 8, 51);
     width: 100%;
     height: 100vh;
@@ -88,12 +101,14 @@ body {
 
 
 #mainFlex {
+    /*Giving my mainflex id a display element of flex, to aid in the structure of my homepage*/
     display: flex;
     flex-wrap: wrap;
 }
 
 
 .leftarticle {
+    /*Giving my left article an ID. Structural elements are being used and colour so that it fits the theme of my website*/
     width: 500px;
     padding: 5px;
     border: 2px solid gold;
@@ -104,10 +119,12 @@ body {
 }
 
 .leftarticle:hover {
+    /*Giving my left article a hover effect, so when a user hovers over one of the articles, the border will turn white, aiding accessibility*/
     border-color: white;
 }
 
 .middlearticle {
+    /*Giving my middle article an ID. Structural elements are being used and colour so that it fits the theme of my website*/
     width: 500px;
     padding: 5px;
     border: 2px solid gold;
@@ -118,10 +135,12 @@ body {
 }
 
 .middlearticle:hover {
+    /*Giving my middle article a hover effect, so when a user hovers over one of the articles, the border will turn white, aiding accessibility*/
     border-color: white;
 }
 
 .rightarticle {
+    /*Giving my right article an ID. Structural elements are being used and colour so that it fits the theme of my website*/
     width: 500px;
     padding: 5px;
     border: 2px solid gold;
@@ -132,16 +151,20 @@ body {
 }
 
 .rightarticle:hover {
+    /*Giving my right article a hover effect, so when a user hovers over one of the articles, the border will turn white, aiding accessibility*/
+    width: 500px;
     border-color: white;
 }
 
 
 p {
+    /*Giving my p tag structural elements, these include layout ones such as text-aligns, widths and colour effects such as white */
     text-align: start;
     width: 99%;
     color: white;
 }
 
+/*Giving my dropdownimages an ID, this way, I can structure the layout of my images, I have displayed them in a block so they flow well, and added auto margins aswell as an appropriate width*/
 .dropdownimages {
     display: block;
     margin-left: auto;
@@ -150,15 +173,18 @@ p {
 
 }
 
+/*Giving my dropdown a max-width of 700px, so it only drops down to that width*/
 .dropdown {
     max-width: 700px;
 }
 
+/*Giving my dropdown and content box ID's structure elements, such as position relative and margin attributes*/
 .dropdown .contentbox {
     position: relative;
     margin: 10px 20px;
 }
 
+/*Giving my dropdown, contentbox, and label ID's layout effects, so that my menu looks more laid out and structured.*/
 .dropdown .contentbox .label {
     position: relative;
     padding: 10px;
@@ -170,6 +196,8 @@ p {
 }
 
 .dropdown .contentbox .label::before {
+    /*Using a before statement which creates a pseduo-element of my previus attributes, this allowed me to add more structural element before 
+    relating to the ID's. When a user clicks the "+", it will open up my menu relating to said cast member.*/
     content: '+';
     position: absolute;
     top: 50%;
@@ -179,11 +207,15 @@ p {
 }
 
 .dropdown .contentbox.active .label::before {
+    /*This follows my before pseduo-element, as once a user clicks the "-", the menu will close up following the .active , relating
+    to a users interaction*/
     content: '-';
 }
 
 
 .dropdown .contentbox .content {
+    /* Grouping my dropdown, contentbox and content ID's together so they share the same elements. This was a good way for me to address my content
+    that will be place in the dropdown menu box*/
     position: relative;
     background: rgb(4, 8, 51);
     ;
@@ -195,11 +227,14 @@ p {
 }
 
 .dropdown .contentbox.active .content {
+    /*Using active, this enables user interaction, so whenever the user presses either the box or +, the dropdown menu will activate and dropdown
+    with information, as well as being able to close the box as well.*/
     height: 127px;
     font-family: 'Roboto Condensed';
 }
 
 .thumbnails {
+    /*Adding thumbnails to my menus through an ID. This was a good way for me to strucutre and layout my images in my menus.*/
     width: 92%;
     padding: 6px;
     margin-left: 14px;
@@ -208,6 +243,7 @@ p {
 }
 
 .thumbnails2 {
+    /*Adding thumbnails to my menus through an ID. This was a good way for me to strucutre and layout my images in my menus.*/
     width: 92%;
     padding: 6px;
     margin-left: 14px;
@@ -217,6 +253,7 @@ p {
 }
 
 .thumbnails3 {
+    /*Adding thumbnails to my menus through an ID. This was a good way for me to strucutre and layout my images in my menus.*/
     width: 92%;
     padding: 6px;
     margin-left: 14px;
@@ -227,6 +264,7 @@ p {
 
 
 footer {
+    /*Using a footer here to display it at the bottom of my page, using strucutre elements and colour*/
     clear: both;
     height: 70px;
     padding: 5px;
@@ -237,14 +275,17 @@ footer {
 }
 
 footer img {
+    /*Using footer images to set a width for my icons in the footer*/
     width: 50px;
 }
 
 footer ul {
+    /*Using a footer unordered list attribute to customise the padding-left element*/
     padding-left: 0px;
 }
 
 footer ul li {
+    /*Using a footer unordered list, using strucutre elements to aid in the display of my footer's ul li*/
     display: inline-block;
-    padding: 0px 5px;
+    padding: 3px 23px;
 }

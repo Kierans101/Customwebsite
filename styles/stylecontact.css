@@ -1,10 +1,21 @@
-* {
+@media screen and (max-width: 880px) { /*Giving my contact-box a responsive way to be viewed*/
+    .contact-box {
+        grid-template-columns: 1fr;
+    }
+
+    .left {
+        height: 200px;
+    }
+}
+
+* {  /* Using a universal selector to add more strucutre to my homepage.*/
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-#top {
+#top { /*Using an ID here to style the top of my homepage, using structure style elements to aid the navigation bar, header and logo. Primarly adding a flex to my homepage aided in my layout overall. */
+
     width: 100%;
     height: 75px;
     padding: 5px;
@@ -13,23 +24,26 @@
     Font-Family: 'Roboto Condensed', Sans-Serif;
 }
 
-a:link {
+a:link {/*Giving no text decoration and colour of yellow to my links*/
+
     text-decoration: none;
     color: #fed600;
 }
 
-a:visited {
+a:visited {/*Giving no text decoration and colour of yellow to visited links*/
+
     text-decoration: none;
     color: #fed600;
 }
 
-body {
+body {/*Using a body style tag here, this enabled me to add colour to my background, and set the width and height to an appropriate scale*/
     background-color: rgb(4, 8, 51);
     width: 100%;
     height: 100vh;
 }
 
-#richmondbadge {
+#richmondbadge {/*Giving my badge in my navigation bar an id, with style elements to suit it to the theme of my website*/
+
     width: 146px;
     height: 149%;
     padding-right: 10px;
@@ -38,7 +52,8 @@ body {
     padding-bottom: 16px;
 }
 
-#logo {
+#logo { /*Giving my logo in my navigation bar an id, with style elements to suit it to the theme of my website*/
+
     text-align: left;
     color: white;
     margin-left: 118px;
@@ -47,13 +62,15 @@ body {
     font-size: 3em;
 }
 
-nav {
+nav { /*Giving my nav bar style elements to make my navigation bar sit at the top of the screen accordingly*/
+
     text-align: center;
     flex-grow: 1;
     padding: 11px;
 }
 
-nav ul li {
+nav ul li { /*Giving my nav bar an unordered list style elements, this aided in my navigation headers, using structure and colour to suit the theme of my website*/
+
     list-style-type: none;
     display: inline-block;
     padding: 5px 10px;
@@ -66,11 +83,12 @@ nav ul li {
     padding-top: 0px;
 }
 
-nav ul li:hover {
+nav ul li:hover { /*Giving my nav unordered list a hover effect, so whenever the user hovers over a header, it will turn dark blue*/
+
     background-color: rgb(4, 8, 51);
 }
 
-aside {
+aside { /*Giving my aside a sense of structure through layout elements and colour*/
     background-color: rgb(4, 8, 51);
     border: 2px solid gold;
     border-radius: 10px;
@@ -82,14 +100,14 @@ aside {
     margin-right: 130px;
 }
 
-#contactlist {
+#contactlist {/*Giving my contact list a class, this added structural information such as layouts and font styling elements*/
     color: white;
     text-align: left;
     Font-Family: 'Cabin', Sans-Serif;
     Font-Size: 18px;
 }
 
-.container {
+.container { /*Using an ID here for my container, this consists structural information such as layout effects and position relative and display flex */
     position: relative;
     display: flex;
     justify-content: center;
@@ -99,7 +117,8 @@ aside {
     padding: 20px 100px;
 }
 
-.container:after {
+.container:after { /*Relating to my container, I was able to use an :after, which allowed me to create a blurred background, aiding in presentation and an formal approach
+    as it is a contact page, I wanted to make this page look as formal as possible, so using this aided me to do that. I have also linked a background image in this ID*/
     content: '';
     position: absolute;
     Left: 0;
@@ -112,7 +131,7 @@ aside {
     filter: blur(10px);
 }
 
-.contact-box {
+.contact-box { /*I have used an id here for my contact box. This enabled me to add the correct structural formats needed to make this template*/
     max-width: 850px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -124,24 +143,27 @@ aside {
     border-radius: 10px;
 }
 
-.left {
+.left { /*I have used a id here for my left image, this was an effective way for me to display my image on the left side linking it to my contact box*/
     height: 100%;
     background: url(../images/contactcover.jpg) no-repeat center;
     background-size: cover;
 
 }
 
-.right {
+.right { /*Going in hand with my left ID, I was able to create a seemingless contact box, so having a right ID for my contact box styling was an efficent way 
+    to allow a proper formal layout*/
     padding: 80px 40px;
 }
 
-h1 {
+h1 {/*Using a generic h1 style element to style my h1 tag*/
+
     color: #fed600;
     Font-Family: 'Roboto Condensed', Sans-Serif;
     text-align: center;
 }
 
-h2 {
+h2 {/*Using a generic h2 style element to style my h2 tags in general*/
+
     position: relative;
     padding-bottom: 10px;
     margin-bottom: 10px;
@@ -150,7 +172,7 @@ h2 {
     text-align: center;
 }
 
-h2:after {
+h2:after { /*Using a pseudo-effect here to enable the content in the input fields to be styled as well as the boxes to be styled*/
     content: '';
     position: absolute;
     Left: 50%;
@@ -163,14 +185,16 @@ h2:after {
 
 }
 
-.asidep {
+.asidep { /*using my asidep here, this enabled me to style the paragraphs in my aside, as this would affect my p tags overall, therefore, I decided to make a different one
+    to the one being used in the inputfield*/
     color: white;
     text-align: left;
     Font-Family: 'Cabin', Sans-Serif;
     Font-Size: 18px;
 }
 
-.pnotreal {
+.pnotreal { /*Giving a p tag styling here, I was able to styling a sentence at the bottom of my contact page, as I wanted to indicate that the information wasn't real, so
+    having this was a useful way as I styled it in italics to highlight the information*/
     color: white;
     text-align: left;
     Font-Family: 'Cabin', Sans-Serif;
@@ -178,11 +202,12 @@ h2:after {
     font-style: italic;
 }
 
-::placeholder {
+::placeholder { /*Changing my placeholder text to gold*/
     color: #fed600;
 }
 
-.field {
+.field { /*Styling my field here, this allowed me to add a dark red background to fit the theme of Ted Lasso, aswell as layout effects such as transition, which allowed my hover 
+    effects to be effective*/
     width: 100%;
     padding: 0.5rem 1rem;
     outline: none;
@@ -193,25 +218,24 @@ h2:after {
     transition: .3s;
 }
 
-.field:hover {
+.field:hover { /*Having a hover effect so whenever a user hovers over a input box, the colour will change*/
     background-color: #fff;
 }
 
-.field:focus {
+.field:focus { /*Having a field of focus, allowing for the focus of the text or input box to clearly known to the user */
     background-color: #fff;
     border: 2px solid #fed600;
     ;
 }
 
-textarea {
+textarea { /*Giving my textarea a certain height. I have done this due to the other input boxes being small, so having a bigger text box
+    allows users to see their messages easier compared to a small text box*/
     height: 150px;
 }
 
-.area {
-    min-height: 150px;
-}
 
-.send {
+.send { /*Customising my sendbutton with an ID, this was useful because I was able to play around with its widths and heights, aswell as its colours to make it look as formal
+    as possible, I also included a transition which relates to my hover effect */
     width: 100%;
     padding: 0.5rem 1rem;
     font-size: 1.1rem;
@@ -223,11 +247,12 @@ textarea {
     transition: .3s;
 }
 
-.send:hover {
+.send:hover { /*Giving a hover effect to my sendbutton*/
     background-color: rgb(112, 16, 16);
 }
 
-footer {
+footer {/*Using a footer here to display it at the bottom of my page, using strucutre elements and colour*/
+
     clear: both;
     height: 70px;
     padding: 5px;
@@ -235,25 +260,19 @@ footer {
     text-align: center;
 }
 
-footer img {
+footer img {/*Using footer images to set a width for my icons in the footer*/
+
     width: 50px;
 }
 
-footer ul {
+footer ul {/*Using a footer unordered list attribute to customise the padding-left element*/
+
     padding-left: 0px;
 }
 
-footer ul li {
+footer ul li {/*Using a footer unordered list, using strucutre elements to aid in the display of my footer's ul li*/
+
     display: inline-block;
-    padding: 0px 5px;
+    padding: 3px 23px;
 }
 
-@media screen and (max-width: 880px) {
-    .contact-box {
-        grid-template-columns: 1fr;
-    }
-
-    .left {
-        height: 200px;
-    }
-}

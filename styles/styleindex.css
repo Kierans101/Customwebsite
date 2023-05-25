@@ -1,4 +1,6 @@
 @keyframes fadein {
+
+    /* Using a keyframe style element, to give my slider a fadein style using opacity*/
     0% {
         opacity: 0;
     }
@@ -9,22 +11,25 @@
 }
 
 * {
+    /* Using a universal selector to add more strucutre to my homepage.*/
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-
+/*Giving no text decoration and colour of yellow to my links*/
 a:link {
     text-decoration: none;
     color: #fed600;
 }
 
+/*Giving no text decoration and colour of yellow to visited links*/
 a:visited {
     text-decoration: none;
     color: #fed600;
 }
 
+/*Using an ID here to style the top of my homepage, using structure style elements to aid the navigation bar, header and logo. Primarly adding a flex to my homepage aided in my layout overall. */
 #top {
     width: 100%;
     height: 75px;
@@ -34,12 +39,14 @@ a:visited {
     Font-Family: 'Roboto Condensed', Sans-Serif;
 }
 
+/*Using a body style tag here, this enabled me to add colour to my background, and set the width and height to an appropriate scale*/
 body {
     background-color: rgb(4, 8, 51);
     width: 100%;
     height: 100vh;
 }
 
+/*Giving style elements to my button, as this added layout and colour features to my buttons*/
 button {
     height: 31.5vh;
     font-size: 2rem;
@@ -49,17 +56,19 @@ button {
     font-family: 'Roboto Condensed';
 }
 
+/*Giving a style element of hover, so whenever a user hovers over the button, the border will turn gold.*/
 button:hover {
     border-color: gold;
 }
 
-
-#tedlasso {
+/*Using an id here to customise the videos in my collums, aiding the structure using widths, heights and border-radius*/
+#tedlassovideos {
     width: 97%;
     height: 76%;
     border-radius: 80px;
 }
 
+/*Using a generic h1 style element to style my h1 tag*/
 h1 {
     color: white;
     text-align: center;
@@ -67,7 +76,7 @@ h1 {
     Font-Size: 35px;
 }
 
-
+/*Using a generic h2 style element to style my h2 tags in general*/
 h2 {
     color: white;
     text-align: left;
@@ -78,6 +87,7 @@ h2 {
     padding-bottom: 20px;
 }
 
+/*giving my welcometitle an id, and customizing it suiting the theme of my website*/
 #welcometitle {
     color: gold;
     text-align: center;
@@ -87,6 +97,7 @@ h2 {
     margin-left: 2%;
 }
 
+/*Giving my badge in my navigation bar an id, with style elements to suit it to the theme of my website*/
 #richmondbadge {
     width: 146px;
     height: 149%;
@@ -96,6 +107,7 @@ h2 {
     padding-bottom: 16px;
 }
 
+/*Giving my logo in my navigation bar an id, with style elements to suit it to the theme of my website*/
 #logo {
     text-align: left;
     color: white;
@@ -105,21 +117,14 @@ h2 {
     font-size: 3em;
 }
 
-
-#banner {
-    display: block;
-    margin-right: auto;
-    width: 50%;
-    margin-left: 18%;
-}
-
+/*Giving my nav bar style elements to make my navigation bar sit at the top of the screen accordingly*/
 nav {
     text-align: center;
     flex-grow: 1;
     padding: 11px;
 }
 
-
+/*Giving my nav bar an unordered list style elements, this aided in my navigation headers, using structure and colour to suit the theme of my website*/
 nav ul li {
     list-style-type: none;
     display: inline-block;
@@ -133,10 +138,12 @@ nav ul li {
     padding-top: 0px;
 }
 
+/*Giving my nav unordered list a hover effect, so whenever the user hovers over a header, it will turn dark blue*/
 nav ul li:hover {
     background-color: rgb(4, 8, 51);
 }
 
+/*Giving my introductionlist an id, this enabled me to customise the list, nested in my article */
 #introductionlist {
     color: white;
     text-align: left;
@@ -144,6 +151,8 @@ nav ul li:hover {
     Font-Size: 18px;
 }
 
+/*Using a slider class here, this uses keyframes as well, which uses percentages to switch to each image relating to the percentage. I have also linked
+images to these percentages, enableing a smooth transition (slide) between the images*/
 .slider {
     width: 720px;
     height: 376px;
@@ -153,6 +162,7 @@ nav ul li:hover {
     border-radius: 20px;
 }
 
+/*These are the keyframes written about above, each percentage aids in the transition of my images, using percentages to switch between image on a cycle*/
 @keyframes slide {
     25% {
         background: url(../images/trailer1.webp)
@@ -171,12 +181,14 @@ nav ul li:hover {
     }
 }
 
+/*Giving my themesong a id giving my themesong's controls a more structured way for a users view*/
 #themesong {
     margin-left: 194px;
     padding-top: 1%;
     opacity: 0.5;
 }
 
+/*Using a generic article here to style my article, I have used strucutre and font styles and colours to enable my article to have the same theme as my website*/
 article {
     width: 66%;
     height: 546px;
@@ -188,12 +200,12 @@ article {
     margin-left: 190px;
 }
 
-
+/*Giving my article a border-hover element, so when the user hovers over the article, the border will turn white, which gives accessibility features for the user*/
 article:hover {
     border-color: white;
 }
 
-
+/*Giving my article p styling features, which aids in the theme of my website*/
 article p {
     float: left;
     width: 100%;
@@ -203,12 +215,14 @@ article p {
     Font-Size: 20px;
 }
 
+/*Giving structure style elements to my article's images*/
 article img {
     width: 250px;
     float: right;
 
 }
 
+/*Using an ID to style my asides which nests my buttons and videos, this was useful as I could style these attributes in a column theme*/
 #asideleft {
     background-color: rgb(121, 9, 9);
     padding: 1rem;
@@ -222,6 +236,7 @@ article img {
     margin-left: 50px;
 }
 
+/*Using an ID to style my asides which nests my buttons and videos, this was useful as I could style these attributes in a column theme*/
 #asideright {
     background-color: rgb(121, 9, 9);
     padding: 1rem;
@@ -234,6 +249,7 @@ article img {
     margin-right: 50px;
 }
 
+/*Using a footer here to display it at the bottom of my page, using strucutre elements and colour*/
 footer {
     clear: both;
     height: 70px;
@@ -242,27 +258,23 @@ footer {
     text-align: center;
 }
 
+/*Using footer images to set a width for my icons in the footer*/
 footer img {
     width: 55px;
 }
 
+/*Using a footer unordered list attribute to customise the padding-left element*/
 footer ul {
     padding-left: 0px;
 }
 
+/*Using a footer unordered list, using strucutre elements to aid in the display of my footer's ul li*/
 footer ul li {
     display: inline-block;
     padding: 3px 23px;
 }
 
+/*Giving my mainflex id a display element of flex, to aid in the structure of my homepage*/
 #mainFlex {
     display: flex;
-}
-
-.bannerImg {
-    width: 120%;
-}
-
-.fadein {
-    animation: fadein 3s;
 }

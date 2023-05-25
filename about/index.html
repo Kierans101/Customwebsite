@@ -1,18 +1,21 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html> <!--Tells the document that it is a HTML document-->
+<html><!--This tag is the root of the HTML document (opening)-->
 
-<head>
+<head><!--The information that the html needs to know-->
   <link rel="stylesheet" type="text/css" href="../styles/styleabout.css">
+  <!--Using a href to link my aboutpage to my style css sheet-->
   <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+  <!--Transmitting how the text is transmitted and stored-->
   <link href="https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700" rel="stylesheet">
-
+  <!--Links a custom font style-->
 </head>
 
-<body>
-  <header id="top">
+<body><!--Body tag, contains the main information in the HTML document-->
+  <header id="top"><!--Giving my header an id of top, and my h1 id of logo-->
     <h1 id="logo">Ted Lasso</h1>
 
     <nav>
+      <!--Using a nav tag to nest in an unordered list, with list tags which is used in my navigation bar that links my websites togeather-->
       <ul>
         <li><a href="../home/index.html">Home</a>
         <li><a href="../about/index.html">About</a>
@@ -20,17 +23,21 @@
         <li><a href="../contact/index.html">Contact</a>
         <li><a
             href="https://shop.warnerbros.co.uk/collections/ted-lasso?gclid=CjwKCAjw67ajBhAVEiwA2g_jEG57ku-ExL73mD1v8Z5IoXGE5lnZVoz5_2Q8N8AUbQqBX3QvJj4hZxoCJsIQAvD_BwE>">Shop</a>
+          <!--This is different from my list links, as this links the real-life shop for Ted Lasso-->
         </li>
       </ul>
     </nav>
 
     <img id="richmondbadge" src="../images/afcrichmondbadge.png" alt="Richmond's Badge">
+    <!--Linking my richmond badge to my style sheet-->
   </header>
 
-  <div id="mainflex">
+  <div id="mainflex"> <!--Giving an id for flex elements-->
     <h1>What is Ted Lasso?</h1>
     <aside>
+      <!--Using an aside tag so that it was more flexible for me to customise my image and paragraph within this aboutpage-->
       <img class="fadein" id="aboutimages" img src="../images/aboutposter.jpeg" alt="Cast">
+      <!--Linking a class to my aside image and giving an id to my aboutimages-->
 
 
 
@@ -53,18 +60,21 @@
         Regarding this, the series has received critical acclaim and praised for certain aspects that the show covers,
         from football antics, to mental health and relationship
         issues, relating to everyday people to make footballers feel more human then just football stars.
-      </p>
+      </p><!--Main paragraph in my aside, featuring a link-->
 
     </aside>
 
-    <br>
-    <h1>Geographical Information</h1>
+    <br><!--Adding a break to add more website flow and structure-->
+
+    <h1>Geographical Information</h1><!--my geographical information aside, which consists of an iframe which links an interactive map. This aside also consists
+    of an unordered list that has href links within my lists.-->
     <aside>
       <iframe class="map"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2489.27648591149!2d-0.08824628423403527!3d51.39797427961739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876012de369f8cf%3A0x9587b7222f2816b2!2sSelhurst%20Park%20Stadium%2C%20Holmesdale%20Rd%2C%20London%20SE25%206PU!5e0!3m2!1sen!2suk!4v1683299004454!5m2!1sen!2suk"
         width="2000" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+        referrerpolicy="no-referrer-when-downgrade"></iframe><!--Linking my iframe map into my aside, giving it style elements in the html aided by the link-->
       <div>
+        <!--Using a div tag, nested inside are my paragraphs, lists that consist of links to other important websites-->
 
         <p> Ted Lasso uses various filming locations around England, mostly in London. You can indeed vist these
           locations, some are free to visit whilst the stadium that they film in
@@ -90,8 +100,10 @@
       </div>
     </aside>
 
-    <h1>Season 1</h1>
 
+    <h1>Season 1</h1>
+    <!--Giving an aside id for my trailers, as this was easy for me to customise my information, this includes a p tag 
+    , a video tag with a link to said video.-->
     <aside id="asidetrailers">
 
       <p>Season 1 follows Ted Lasso leave his american college football team in Wichita, Kansas and moves to not so
@@ -106,13 +118,15 @@
         as one of
         Apple's biggest shows on the platform.</p>
 
-      <video id=trailers controls autoplay poster="../images/trailer1.webp">
-        <source src="../videos/season1.mp4" type="video/mp4" />
+      <video id=trailers controls autoplay poster="../images/trailer1.webp"><!--Giving my video an ID so that I can customise the videos independently, I have given the feature
+      controls so that the user can control the video, aswell as give it a poster to act as a thumbnail -->
+        <source src="../videos/season1.mp4" type="video/mp4" /><!--Using a link to link my video-->
 
     </aside>
 
     <h1>Season 2</h1>
-
+    <!--Giving an aside id for my trailers, as this was easy for me to customise my information, this includes a p tag 
+    , a video tag with a link to said video.-->
     <aside id="asidetrailers">
 
       <p>Season 2 Follows Ted and the team, AFC Richmond relapse back to the championship due to a action packed game
@@ -127,34 +141,37 @@
         slowly but
         surley climb the infamous ladder of the championship, and end up getting promoted!</p>
 
-      <video id=trailers controls autoplay poster="../images/trailer2.webp">
-        <source src="../videos/season2.mp4" type="video/mp4" />
+      <video id=trailers controls autoplay poster="../images/trailer2.webp"><!--Giving my video an ID so that I can customise the videos independently, I have given the feature
+        controls so that the user can control the video, aswell as give it a poster to act as a thumbnail -->
+        <source src="../videos/season2.mp4" type="video/mp4" /><!--Using a link to link my video-->
       </video>
 
     </aside>
 
     <h1>Season 3</h1>
-
+    <!--Giving an aside id for my trailers, as this was easy for me to customise my information, this includes a p tag 
+    , a video tag with a link to said video.-->
     <aside id="asidetrailers">
 
       <p>Season 3 introduces the team re-igniting the start of the premier league, as they face Chelsea at Nelson Park!
         They managed
         to scrape a draw, which sparks the question can AFC Richmond survive another season? Regarding this, a legend of
-        football named Zaha,
+        football named Zava,
         with a personaility to match his apperance, annouces he wants to sign for a premier league team! Suprisingly,
         Richmond get the man
         gourvened by Rebbeca's persuasion skills, manages to convince the giant to sign for Richmond! Throughout the
         season we see them climb
-        higly up the table with Zaha's help. The season has yet to conclude, we will have to see how the geyhounds do!
+        higly up the table with Zava's help. The season has yet to conclude, we will have to see how the geyhounds do!
       </p>
 
-      <video id=trailers controls autoplay poster="../images/trailer3.webp">
-        <source src="../videos/season3.mp4" type="video/mp4" />
+      <video id=trailers controls autoplay poster="../images/trailer3.webp"><!--Giving my video an ID so that I can customise the videos independently, I have given the feature
+        controls so that the user can control the video, aswell as give it a poster to act as a thumbnail -->
+        <source src="../videos/season3.mp4" type="video/mp4" /><!--Using a link to link my video-->
       </video>
 
     </aside>
     <br>
-    <footer>
+    <footer> <!--Using a footer tag here, which consists of images and links-->
       <ul>
         <li><a href="https://www.facebook.com/tedlassofans/">
             <img src="../images/faceboo.png" alt="Facebook page">
@@ -167,6 +184,9 @@
         <li><a href="https://twitter.com/TedLasso">
             <img src="../images/twitter.png" alt="Twitter page">
 
+            <li><a href="https://www.warnerbros.com/tv/ted-lasso">
+              <img src="../images/warnerbros.png" alt="Warner Bros page">
+
           </a>
         </li>
       </ul>
@@ -176,4 +196,4 @@
 
 </body>
 
-</html>
+</html> 

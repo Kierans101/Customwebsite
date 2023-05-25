@@ -1,19 +1,22 @@
-<!doctype html>
-<html>
+<!doctype html> <!--Tells the document that it is a HTML document-->
+<html> <!--This tag is the root of the HTML document-->
 
-<head>
-  <meta charset="utf-8">
+<head> <!--The information that the HTML needs to know-->
+  <meta charset="utf-8"> <!--Transmitting how the text is transmitted and stored-->
   <link href="https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="../styles/styleindex.css">
+  <!--Links a custom font style-->
+  <link rel="stylesheet" type="text/css" href="../styles/styleindex.css"> <!--Links my stylesheet to my HTML document-->
   <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-  <title>Ted Lasso</title>
+  <!--Provides strucutre of my metadata for my website-->
+
 </head>
 
-<body>
-  <header id="top">
+<body> <!--Body tag, contains the main information in the HTML document-->
+  <header id="top"> <!--Giving my header an id of top, and my h1 id of logo-->
     <h1 id="logo">Ted Lasso</h1>
 
     <nav>
+      <!--Using a nav tag to nest in an unordered list, with list tags which is used in my navigation bar that links my websites togeather-->
       <ul>
         <li><a href="../home/index.html">Home</a>
         <li><a href="../about/index.html">About</a>
@@ -21,48 +24,50 @@
         <li><a href="../contact/index.html">Contact</a>
         <li><a
             href="https://shop.warnerbros.co.uk/collections/ted-lasso?gclid=CjwKCAjw67ajBhAVEiwA2g_jEG57ku-ExL73mD1v8Z5IoXGE5lnZVoz5_2Q8N8AUbQqBX3QvJj4hZxoCJsIQAvD_BwE>">Shop</a>
-
+          <!--This is different from my list links, as this links the real-life shop for Ted Lasso-->
         </li>
       </ul>
     </nav>
     </ul>
     </nav>
 
-    <br><br>
+    <br><br> <!--Adding a breaking point for more strucutre-->
 
     <img id="richmondbadge" src="../images/afcrichmondbadge.png" alt="Richmond's Badge">
+    <!--Linking my richmond badge to my style sheet-->
 
   </header>
   <br>
-  <div id="mainFlex">
+  <div id="mainFlex"> <!--Giving an id for flex elements-->
 
     <aside id="asideleft">
+      <!--An aside tag which consists of three buttons that have a gif converted to a video on autoplay. I have done this by looping the video with video control elements-->
 
       <button onclick="document.location='https://www.youtube.com/watch?v=ZVvtw4M5asc'">Rebbeca Wilton<video
-          id="tedlasso" loop muted autoplay>
+          id="tedlassovideos" loop muted autoplay>
 
           <source src="../videos/believe.mp4" type="video/mp4"></button>
 
-      <button onclick="document.location='https://www.youtube.com/watch?v=HcJhnM1ynhY'">Coach Beard<video id="tedlasso"
+      <button onclick="document.location='https://www.youtube.com/watch?v=HcJhnM1ynhY'">Coach Beard<video id="tedlassovideos"
           loop muted autoplay>
 
           <source src="../videos/coachbeard.mp4" type="video/mp4"></button>
 
-      <button onclick="document.location='https://www.youtube.com/watch?v=rSUeokabolw'">Roy Kent<video id="tedlasso"
+      <button onclick="document.location='https://www.youtube.com/watch?v=rSUeokabolw'">Roy Kent<video id="tedlassovideos"
           loop muted autoplay>
 
           <source src="../videos/roykent.mp4" type="video/mp4"></button>
 
     </aside>
 
-    <main>
+    <main> <!--My main tag, which consists of the main information for my homepage-->
 
-      <div class="slider"></div>
+      <div class="slider"></div> <!--Linking a div to my homepage, this div consists of my slideshow of images-->
 
       <div id="welcometitle">Welcome to AFC Richmond!</div>
 
-      <section>
-        <article>
+      <section><!--Using a section tag, which links my article and header together-->
+        <article> 
           <header>
             <h2>Learn The Ted Lasso Way</h2>
             <ul id="introductionlist">
@@ -89,7 +94,7 @@
                 the audio controller below this sentence.</li>
               <br>
               <audio id="themesong" controls autoplay>
-                <source src="../audio/tedlassothemesong.mp3" type="audio/mp3">
+                <source src="../audio/tedlassothemesong.mp3" type="audio/mp3"> <!--Linking the Ted Lasso theme song via an audio element using controls.-->
               </audio>
 
           </header>
@@ -98,27 +103,27 @@
 
     </main>
 
-    <aside id="asideright">
+    <aside id="asideright">   <!--An aside tag which consists of three buttons that have a gif converted to a video on autoplay. I have done this by looping the video with video control elements-->
 
-      <button onclick="document.location='https://www.youtube.com/watch?v=0kqDbnuTT9M'">Jamie Tartt<video id="tedlasso"
+      <button onclick="document.location='https://www.youtube.com/watch?v=0kqDbnuTT9M'">Jamie Tartt<video id="tedlassovideos"
           loop muted autoplay>
 
           <source src="../videos/jamie-tartt-ted-lasso.mp4" type="video/mp4"></button>
 
-      <button onclick="document.location='https://www.youtube.com/watch?v=kA6jEK0BU04'">Keeley Jones<video id="tedlasso"
+      <button onclick="document.location='https://www.youtube.com/watch?v=kA6jEK0BU04'">Keeley Jones<video id="tedlassovideos"
           loop muted autoplay>
 
           <source src="../videos/keeley.mp4" type="video/mp4"></button>
 
       <button onclick="document.location='https://www.youtube.com/watch?v=fIOwnPzU-_U'">Leslie Higgins<video
-          id="tedlasso" loop muted autoplay>
+          id="tedlassovideos" loop muted autoplay>
 
           <source src="../videos/higgins.mp4" type="video/mp4"></button>
 
     </aside>
   </div>
 
-  <footer>
+  <footer> <!--Using a footer tag here, which consists of images and links-->
     <ul>
       <li><a href="https://www.facebook.com/tedlassofans/">
           <img src="../images/faceboo.png" alt="Facebook page">
@@ -133,8 +138,8 @@
 
         </a>
 
-        <li><a href="https://twitter.com/TedLasso">
-          <img src="../images/warnerbros.png" alt="Twitter page">
+      <li><a href="https://www.warnerbros.com/tv/ted-lasso">
+          <img src="../images/warnerbros.png" alt="Warner Bros page">
 
         </a>
       </li>

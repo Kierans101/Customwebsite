@@ -1,19 +1,23 @@
-<!doctype html>
-<html>
+<!doctype html> <!--Tells the document that it is a HTML document-->
+<html><!--This tag is the root of the HTML document-->
 
-<head>
-    <meta charset="utf-8">
+<head><!--The information that the HTML needs to know-->
+    <meta charset="utf-8"><!--Transmitting how the text is transmitted and stored-->
     <link href="https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700" rel="stylesheet">
+    <!--Links a custom font style-->
     <link rel="stylesheet" type="text/css" href="../styles/stylecontact.css">
+    <!--Links my stylesheet to my HTML document-->
     <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-    <title>Contact us</title>
+    <!--Provides strucutre of my metadata for my website-->
+
 </head>
 
-<body>
-    <header id="top">
+<body><!--Body tag, contains the main information in the HTML document-->
+    <header id="top"><!--Giving my header an id of top, and my h1 id of logo-->
         <h1 id="logo">Ted Lasso</h1>
 
         <nav>
+            <!--Using a nav tag to nest in an unordered list, with list tags which is used in my navigation bar that links my websites togeather-->
             <ul>
                 <li><a href="../home/index.html">Home</a>
                 <li><a href="../about/index.html">About</a>
@@ -21,17 +25,20 @@
                 <li><a href="../contact/index.html">Contact</a>
                 <li><a
                         href="https://shop.warnerbros.co.uk/collections/ted-lasso?gclid=CjwKCAjw67ajBhAVEiwA2g_jEG57ku-ExL73mD1v8Z5IoXGE5lnZVoz5_2Q8N8AUbQqBX3QvJj4hZxoCJsIQAvD_BwE>">Shop</a>
-                </li>
+                </li> <!--This is different from my list links, as this links the real-life shop for Ted Lasso-->
             </ul>
         </nav>
         <img id="richmondbadge" src="../images/afcrichmondbadge.png" alt="Richmond's Badge">
+        <!--Linking my richmond badge to my style sheet-->
 
     </header>
 
 
-    <div class="container">
+    <div class="container"> <!--Giving a div a class of container, which will consist of my content-->
 
-        <aside>
+        <aside><!--Using an aside for my contact details. I have used h2 for the title, and p tags with classes to seperate the lists of information.
+        I have also used break points for a positive way to layout my lists. I have also decided to give a p class at the bottom of my contact
+    page which uses an italic to show that this contact page is not real.-->
 
 
             <h2>Contact Ted Lasso</h2>
@@ -100,15 +107,19 @@
 
 
         </aside>
-        <br>
+        <br><!--Added a breakpoint to add layout strucutre-->
+
         <div class="contact-box">
-            <div class="left"></div>
-            <div class="right">
-                <h2>Contact Us</h2>
-                <input type="text" class="field" placeholder="Your name">
+            <!--Given my contact box a div class, this is where users will be able to input data into inputfields-->
+            <div class="left"></div><!--Given a class of left-->
+            <div class="right"><!--Given a class of right-->
+                <h2>Contact Us</h2><!--Using a h2 tag for my contact us heading-->
+                <input type="text" class="field" placeholder="Your name"><!--Using 2 inputfields that allows users to input data, I have added a class of field, and a placeholder to 
+                indicate what inputbox to put said information, increasing accesibility-->
                 <input type="text" class="field" placeholder="Your email">
-                <textarea class="field" Placeholder="message"></textarea>
-                <button class="send">Send</button>
+                <textarea class="field" Placeholder="message"></textarea><!--Using a textarea here for my message, as this made me able to control the widths of the
+                different boxes-->
+                <button class="send">Send</button><!--Using a button here to act as a send button-->
             </div>
         </div>
     </div>
@@ -118,7 +129,7 @@
 
 
 
-    <footer>
+    <footer><!--Using a footer tag here, which consists of images and links-->
         <ul>
             <li><a href="https://www.facebook.com/tedlassofans/">
                     <img src="../images/faceboo.png" alt="Facebook page">
@@ -130,6 +141,9 @@
 
             <li><a href="https://twitter.com/TedLasso">
                     <img src="../images/twitter.png" alt="Twitter page">
+
+                    <li><a href="https://www.warnerbros.com/tv/ted-lasso">
+                        <img src="../images/warnerbros.png" alt="Warner Bros page">
 
                 </a>
             </li>

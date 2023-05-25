@@ -1,4 +1,7 @@
 @keyframes fadein {
+
+    /*Using a keyframe here to give my poster image a fade in effect, styling it with opacity of 0%, to 100% when it loads in
+     this relates to my .fadein animation of 3 seconds*/
     0% {
         opacity: 0;
     }
@@ -9,6 +12,7 @@
 }
 
 * {
+    /* Using a universal selector to add more strucutre to my homepage.*/
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -16,11 +20,13 @@
 
 
 .fadein {
+    /*Using a class here to style my poster, this relates to my keyframe, as i'm giving my poster a fadein animation of 3 seconds, it consider the keyframe fadein
+    animation as well, giving it a more smoother and real effect*/
     animation: fadein 3s;
 }
 
-
 #top {
+    /*Using an ID here to style the top of my homepage, using structure style elements to aid the navigation bar, header and logo. Primarly adding a flex to my homepage aided in my layout overall. */
     width: 100%;
     height: 75px;
     padding: 5px;
@@ -30,27 +36,25 @@
 }
 
 body {
+    /*Using a body style tag here, this enabled me to add colour to my background, and set the width and height to an appropriate scale*/
     background-color: rgb(4, 8, 51);
     width: 100%;
     height: 100vh;
 }
 
-
+/*Giving my aboutimages an ID, with style elements aiding strucutre for the images */
 #aboutimages {
     width: 20%;
     padding-left: 36px;
     border-radius: 132px;
 }
 
+/*Giving my iframe a height style effect */
 #map {
     height: 20px;
 }
 
-#tedlasso {
-    width: 97%;
-    height: 76%;
-}
-
+/*Giving my general h1 tag style effects, aiding the theme of my website and staying consistent*/
 h1 {
     color: white;
     text-align: center;
@@ -58,6 +62,7 @@ h1 {
     Font-Size: 35px;
 }
 
+/*Giving my general h2 tag style effects, aiding the theme of my website and staying consistent*/
 h2 {
     color: white;
     text-align: left;
@@ -67,7 +72,7 @@ h2 {
     text-align: center;
 }
 
-
+/*Giving my richmondbadge an ID, to aid in style effects, aiding the theme of my website and staying consistent*/
 #richmondbadge {
     width: 146px;
     height: 149%;
@@ -77,6 +82,7 @@ h2 {
     padding-bottom: 16px;
 }
 
+/*Giving my logo an ID, to aid in style effects, aiding the theme of my website and staying consistent*/
 #logo {
     text-align: left;
     color: white;
@@ -86,11 +92,14 @@ h2 {
     font-size: 3em;
 }
 
+/*Giving my nav bar style elements to make my navigation bar sit at the top of the screen accordingly*/
 nav {
     text-align: center;
     flex-grow: 1;
     padding: 11px;
 }
+
+/*Giving my nav bar an unordered list style elements, this aided in my navigation headers, using structure and colour to suit the theme of my website*/
 
 nav ul li {
     list-style-type: none;
@@ -105,12 +114,14 @@ nav ul li {
     padding-top: 0px;
 }
 
+/*Giving my nav unordered list a hover effect, so whenever the user hovers over a header, it will turn dark blue*/
 
 nav ul li:hover {
     background-color: rgb(4, 8, 51);
 
 }
 
+/*Giving my p tag a class, aiding in its style and layout attributes*/
 .p {
     color: white;
     text-align: left;
@@ -118,7 +129,7 @@ nav ul li:hover {
     Font-Size: 23px;
 }
 
-
+/*Giving my list an ID, this will aid in its style and layout attributes, relating to its colour and font styling */
 #Geolist {
     color: white;
     text-align: left;
@@ -126,16 +137,19 @@ nav ul li:hover {
     Font-Size: 23px;
 }
 
+/*Giving my links visted no text decoration, and a colour of yellow */
 a:visited {
     text-decoration: none;
     color: #fed600;
 }
 
+/*Giving my links no text decoration, and a colour of yellow */
 a:link {
     text-decoration: none;
     color: #fed600;
 }
 
+/*Giving my aside structural attributes, these consist of colours, layout and a display flex within a flex direction of row */
 aside {
     background-color: rgb(121, 9, 9);
     border: 2px solid gold;
@@ -150,10 +164,13 @@ aside {
     margin-right: 83px;
 }
 
+/*Giving my aside a hover effect, so whenever a user hovers over, the border will change white, giving a sense of accessibility*/
 aside:hover {
     border-color: white;
 }
 
+/*Giving my asidetrailers an ID. I have used this ID to give my trailers structural effects, as well as colour. Also, I have used a display flex here, with
+a flex-direction which flips the content in my aside, that is why I have used two different aside styling techniques to fix this issue*/
 #asidetrailers {
     background-color: rgb(121, 9, 9);
     border: 2px solid gold;
@@ -167,22 +184,12 @@ aside:hover {
     padding: 10px;
 }
 
+/*Giving an effect to my asidetrailers, so whenever a user hovers over my aside, the border will change white, aiding the accessibility of my webpage*/
 #asidetrailers:hover {
     border-color: white;
 }
 
-#trailersleft {
-    background-color: rgb(121, 9, 9);
-    border: 2px solid gold;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: space-between;
-    gap: 2rem;
-    width: 98%;
-    padding: 10px;
-}
+/*giving my aside p tags styling attributes, these consist of colour and layout effects */
 
 aside p {
     color: rgb(233, 229, 229);
@@ -193,23 +200,13 @@ aside p {
 }
 
 #trailers {
+    /*Giving my trailers a set width that I thought was acceptable*/
     width: 27%;
 }
 
-.box {
-    background-color: rgb(121, 9, 9);
-    width: 396px;
-    height: 25rem;
-    border: 2px solid gold;
-    display: inline-block;
-    margin: 15px;
-    text-align: center;
-    color: white;
-    font-size: 25px;
-    font-family: 'Cabin', Sans-Serif;
-}
 
 
+/*Using a footer here to display it at the bottom of my page, using strucutre elements and colour*/
 footer {
     clear: both;
     height: 70px;
@@ -218,23 +215,23 @@ footer {
     text-align: center;
 }
 
+/*Using footer images to set a width for my icons in the footer*/
 footer img {
     width: 50px;
 }
 
+/*Using a footer unordered list attribute to customise the padding-left element*/
 footer ul {
     padding-left: 0px;
 }
 
+/*Using a footer unordered list, using strucutre elements to aid in the display of my footer's ul li*/
 footer ul li {
     display: inline-block;
-    padding: 0px 5px;
+    padding: 3px 23px;
 }
 
+/*Giving my mainflex a element of display flex*/
 #mainFlex {
     display: flex;
-}
-
-.fadein {
-    animation: fadein 3s;
 }
