@@ -1,15 +1,3 @@
-@keyframes fadein {
-
-    /* Using a keyframe style element, to give my slider a fadein style using opacity*/
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
 * {
     /* Using a universal selector to add more strucutre to my homepage.*/
     padding: 0;
@@ -37,6 +25,26 @@ a:visited {
     background-color: rgb(112, 16, 16);
     display: flex;
     Font-Family: 'Roboto Condensed', Sans-Serif;
+}
+
+/*Giving my logo in my navigation bar an id, with style elements to suit it to the theme of my website*/
+#logo {
+    text-align: left;
+    color: white;
+    margin-left: 118px;
+    flex-direction: column-reverse;
+    padding-top: 3px;
+    font-size: 3em;
+}
+
+/*Giving my badge in my navigation bar an id, with style elements to suit it to the theme of my website*/
+#richmondbadge {
+    width: 146px;
+    height: 149%;
+    padding-right: 10px;
+    padding-top: 0px;
+    margin-right: 5%;
+    padding-bottom: 16px;
 }
 
 /*Using a body style tag here, this enabled me to add colour to my background, and set the width and height to an appropriate scale*/
@@ -97,25 +105,8 @@ h2 {
     margin-left: 2%;
 }
 
-/*Giving my badge in my navigation bar an id, with style elements to suit it to the theme of my website*/
-#richmondbadge {
-    width: 146px;
-    height: 149%;
-    padding-right: 10px;
-    padding-top: 0px;
-    margin-right: 5%;
-    padding-bottom: 16px;
-}
 
-/*Giving my logo in my navigation bar an id, with style elements to suit it to the theme of my website*/
-#logo {
-    text-align: left;
-    color: white;
-    margin-left: 118px;
-    flex-direction: column-reverse;
-    padding-top: 3px;
-    font-size: 3em;
-}
+
 
 /*Giving my nav bar style elements to make my navigation bar sit at the top of the screen accordingly*/
 nav {
@@ -162,24 +153,7 @@ images to these percentages, enableing a smooth transition (slide) between the i
     border-radius: 20px;
 }
 
-/*These are the keyframes written about above, each percentage aids in the transition of my images, using percentages to switch between image on a cycle*/
-@keyframes slide {
-    25% {
-        background: url(../images/trailer1.webp)
-    }
 
-    50% {
-        background: url(../images/trailer2.webp)
-    }
-
-    75% {
-        background: url(../images/trailer3.webp)
-    }
-
-    100% {
-        background: url(../images/trailer4.webp)
-    }
-}
 
 /*Giving my themesong a id giving my themesong's controls a more structured way for a users view*/
 #themesong {
@@ -277,4 +251,35 @@ footer ul li {
 /*Giving my mainflex id a display element of flex, to aid in the structure of my homepage*/
 #mainFlex {
     display: flex;
+}
+
+@keyframes fadein {
+
+    /* Using a keyframe style element, to give my slider a fadein style using opacity*/
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/*These are the keyframes written about above, each percentage aids in the transition of my images, using percentages to switch between image on a cycle*/
+@keyframes slide {
+    25% {
+        background: url(../images/trailer1.webp)
+    }
+
+    50% {
+        background: url(../images/trailer2.webp)
+    }
+
+    75% {
+        background: url(../images/trailer3.webp)
+    }
+
+    100% {
+        background: url(../images/trailer4.webp)
+    }
 }
